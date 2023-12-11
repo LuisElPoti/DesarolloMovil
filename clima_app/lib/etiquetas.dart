@@ -6,7 +6,7 @@ class Etiquetas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(6),
+      padding: const EdgeInsets.all(6),
       child: Container(
         child: Wrap(
           spacing: 12,
@@ -14,9 +14,9 @@ class Etiquetas extends StatelessWidget {
             return Chip(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(6),
-                side: BorderSide(color: Colors.grey, width: 2),
+                side: const BorderSide(color: Colors.grey, width: 2),
               ),
-              avatar: Icon(
+              avatar: const Icon(
                 Icons.card_giftcard,
                 color: Colors.blueAccent,
               ),

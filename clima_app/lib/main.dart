@@ -6,13 +6,27 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("Layout"),
+          centerTitle: true,
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: (){},
+          ),
+          actions: [
+            IconButton(
+                onPressed: (){},
+                icon: Icon(Icons.cloud_outlined))
+          ],
+        ),
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
               children: [
                 Container(
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Column(
                     children: [
                       Image.asset(
@@ -20,14 +34,14 @@ void main() {
                         width: 300,
                         height: 300,
                       ),
-                      SizedBox(height: 16),
-                      Text(
+                      const SizedBox(height: 16),
+                      const Text(
                         "My Birthday",
                         style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                         textAlign: TextAlign.left,
                       ),
-                      SizedBox(height: 16),
-                      Text(
+                      const SizedBox(height: 16),
+                      const Text(
                         "it's going to be a great birthday. We are going out for dinner at my favorite place,"
                             "then watch a movie after we go to the gelateria for ice cream and espresso.",
                         style: TextStyle(fontSize: 16),
@@ -36,9 +50,9 @@ void main() {
                     ],
                   ),
                 ),
-                SeccionClima(),
-                Etiquetas(),
-                Footer(),
+                const SeccionClima(),
+                const Etiquetas(),
+                const Footer(),
               ],
             ),
           ),

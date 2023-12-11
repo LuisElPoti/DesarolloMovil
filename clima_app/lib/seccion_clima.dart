@@ -6,8 +6,8 @@ class SeccionClima extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
-      child: Row(
+      padding: const EdgeInsets.all(16),
+      child: const Row(
         children: [
           Column(
             children: [
